@@ -3,12 +3,15 @@
 
 
 def even_nums():
-    x = int(input("Enter start of range: "))
-    y = int(input("Enter end of range: "))
-
-    for i in range(x, y + 1):
-        if i % 2 == 0:
-            print(i)
+    try:
+        x = int(input("Enter start of range: "))
+        y = int(input("Enter end of range: "))
+    except ValueError:
+        print("Введите только целое число")
+    else:
+        for i in range(x, y + 1):
+            if i % 2 == 0:
+                print(i)
 
 
 even_nums()
