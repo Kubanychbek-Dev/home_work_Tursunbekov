@@ -9,7 +9,7 @@ def number_of_digits_in_num(num):
     for i in range(len(num)):
         if num[i].isdigit():
             number_of_digits += 1
-    print(number_of_digits)
+    print(f"Количество цифр в числе {number_of_digits}")
 
 
 ask_for_digit = input("Введите число: ")
