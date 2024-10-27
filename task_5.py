@@ -29,10 +29,14 @@ def product_of_nums(a, b):
         print(err)
 
 
-try:
-    start_of_range = int(input("Введите начало диапазона: "))
-    end_of_range = int(input("Введите конец диапазона: "))
-except ValueError:
-    print("Введите только целое число")
-else:
-    product_of_nums(start_of_range, end_of_range)
+def get_ranges():
+    try:
+        start_of_range = int(input("Введите начало диапазона: "))
+        end_of_range = int(input("Введите конец диапазона: "))
+    except ValueError:
+        print("Введите только целое число")
+    else:
+        product_of_nums(start_of_range, end_of_range)
+
+
+get_ranges()
