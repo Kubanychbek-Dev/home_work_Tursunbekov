@@ -13,9 +13,14 @@ def number_of_digits_in_num(num):
     print(f"Количество цифр в числе {number_of_digits}")
 
 
-try:
-    ask_for_digit = int(input("Введите число: "))
-except ValueError:
-    print("Введите только целое число")
-else:
-    number_of_digits_in_num(ask_for_digit)
+
+def get_num():
+    try:
+        ask_for_digit = int(input("Введите число: "))
+    except ValueError:
+        print("Введите только целое число")
+    else:
+        number_of_digits_in_num(ask_for_digit)
+
+
+get_num()
